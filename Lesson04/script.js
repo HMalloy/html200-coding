@@ -21,16 +21,3 @@ function multiplied() {
   result = first * second;
   alert(result);
 }
-//
-// const arr = sentence.split(' ');
-// function multiplied() {
-//   let firstNumber = prompt('Enter a number:');
-//   let secondNumber = prompt('Enter another number:');
-//   let inputOne = return Number(firstNumber);
-//   let inputTwo = return Number(secondNumber);
-//   let result = 0;
-//
-//
-//   result = inputOne * inputTwo;
-//   alert(result);
-// }
