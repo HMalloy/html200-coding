@@ -18,7 +18,7 @@ button {
   border-radius:1rem;
   color:pink;
   font-size: 1.25rem;
-  font-color:#000;
+  color:#000;
   transition: background-color 0.25s;
 }
 
