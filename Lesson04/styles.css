@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+}
+
+button {
+  padding:1rem 3rem;
+  background-color: black;
+  border:0;
+  border-radius:1rem;
+  color:pink;
+  font-size: 1.25rem;
+  font-color:#000;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  color:#000;
+  background-color: pink;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
