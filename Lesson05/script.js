@@ -19,8 +19,7 @@ const balance = function(x) {
 
       // check to see that what they entered was actually a number
       if (isNaN(amount)) {
-        alert('Please enter numbers only.')
-        //updateBalance();
+        alert('Please enter numbers only.');
       } else {
         // stop them from depositing more than $50,000 in one day
         if (current + amount > 55000) {
@@ -32,7 +31,6 @@ const balance = function(x) {
           current = x;
           return x;
         }
-      //  updateBalance();
     }
 
     // function for making a withdrawal
@@ -54,11 +52,13 @@ const balance = function(x) {
           let uRes = inpU.toLowerCase().trim();
 
           // let them choose whether or not to go forward with the withdrawal
-          if (uRes == 'yes') {
+          if (uRes === 'yes') {
             alert(`$${amount} has been withdrawn from your account. Your new balance is $${x}.`);
             current = x;
-          } else {
+          } else if (uRes === 'no') {
             alert(`Withdrawal canceled. Current balance: $${current}.`)
+          } else {
+            alert(`Response unclear. Action canceled. Current Balance: $${current}`)
           }
         } else {
           alert(`$${amount} has been withdrawn from your account. Your new balance is $${x}.`);
@@ -66,7 +66,6 @@ const balance = function(x) {
       }
 
       return x;
-    //  updateBalance();
     }
 
     // function for quitting program
